@@ -32,7 +32,11 @@ int ** gene_graph(int nb_sommet,int min, int max){
     //on ajout les couts des distances entre le villes
     for(int i=0; i<nb_sommet; ++i){
         for(int j=0; j<nb_sommet; ++j){
-            matrice[i][j]=rand()%((max+1)-min) +min;
+            if(i!=j){
+                matrice[i][j]=rand()%((max+1)-min) +min;
+            }else{
+                matrice[i][j]=0;
+            }
         }
     }
     return matrice;

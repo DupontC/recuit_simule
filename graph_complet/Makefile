@@ -28,6 +28,6 @@ zip:
 	tar -zcvf $(BIN).tar.gz $(SRC) $^
 
 run:
-	./$(BIN) 10 1 20 monGraph.txt 
+	./$(BIN) 10 1 50 monGraph.txt 
 
     
